@@ -1,18 +1,20 @@
-import { useState } from 'react'
-import './App.css'
-import Rules from './Rules'
-import { Routes, Route } from "react-router-dom"
-import AnimatedCursor from "./component/cursor"
-import Header from './Header'
-import Ssp from './ssp'
-import Coc from './coc'
-import About from './About'
-import Agm from './Agm'
+import { useState } from "react";
+import "./styles/App.css";
+import Rules from "./pages/Rules";
+import { Routes, Route } from "react-router-dom";
+import AnimatedCursor from "./components/cursor";
+import Header from "./pages/Header";
+import Ssp from "./pages/ssp";
+import Coc from "./pages/coc";
+import About from "./pages/About";
+import Agm from "./pages/Agm";
+import Event from "./pages/Events";
 
-function App()
-{
+import Patrick from "./pages/Patrick";
+
+function App() {
   return (
-    <div>
+    <main>
       <section className="auto-margin App">
         <AnimatedCursor />
         <Routes>
@@ -22,11 +24,12 @@ function App()
           <Route path="/ssp" element={<Ssp />} />
           <Route path="/coc" element={<Coc />} />
           <Route path="/agm" element={<Agm />} />
+          {/* <Route path="/patrick" element={<Patrick />} /> */}
+          <Route path="/events" element={<Event />} />
         </Routes>
       </section>
-
-    </div>
-  )
+    </main>
+  );
 }
 
 export default App;

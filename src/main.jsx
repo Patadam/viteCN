@@ -1,13 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./styles/index.css";
+import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 
-import Footer from './Footer'
-import { Routes, Route } from 'react-router-dom';
-import Navbar from './component/Navbar'
-import AnimatedCursor from "./component/cursor"
+import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import AnimatedCursor from "./components/cursor";
+
+// import "./styles/global/global.css"; // uncomment this to re-enable the new global styling system
 
 ReactDOM.render(
   <BrowserRouter>
@@ -18,4 +20,3 @@ ReactDOM.render(
 
   document.getElementById("root")
 );
-

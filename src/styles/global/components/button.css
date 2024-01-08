@@ -1,0 +1,63 @@
+/*
+This file contains styles for:
+ - buttons
+ - links 
+*/
+
+/* Base Button Styles */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+  max-width: 340px;
+}
+
+/* Primary Button */
+.btn-primary {
+  /* Primary button styles */
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+
+  /* FIX: primary button text went white on hover */
+  &:hover {
+    color: var(--text-dark);
+  }
+}
+
+/* Secondary Button */
+.btn-secondary {
+  /* Secondary button styles */
+  color: var(--text-light);
+  background-color: var(--bg-dark);
+}
+
+/* Hover Effect */
+.btn:hover {
+  /* Button hover effect */
+  box-shadow: 0px 0px 10px 1px var(--primary);
+  scale: 1.05;
+}
+
+/* Link Buttons */
+.link {
+  font-weight: 500;
+  color: var(--primary);
+  text-decoration: inherit;
+  overflow: hidden;
+}
+.link:hover {
+  color: var(--primary-lighter);
+  text-decoration: underline;
+}
+
+.link-secondary {
+  color: var(--primary);
+}
+.link-secondary:hover {
+  color: var(--text-light);
+}

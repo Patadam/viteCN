@@ -1,0 +1,32 @@
+@import "./components/colours.css";
+@import "./components/button.css";
+@import "./components/layouts.css";
+@import "./components/images.css";
+
+/* Core global styling */
+
+body {
+  outline: 4px solid orange !important;
+  min-height: 100vh;
+}
+
+#root {
+  /* outline: 4px solid red; */
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+main {
+  /* outline: 4px solid red; */
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 !important; /* FIX: white space around edges due to padding for dark pages */
+}
+
+@media only screen and (max-width: calc(1300px + 1rem)) {
+  main {
+    padding: 1rem;
+  }
+}

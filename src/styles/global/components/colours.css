@@ -1,0 +1,33 @@
+/* Global colour variables */
+/* Brand Colors */
+:root {
+  --primary: hsl(122, 99%, 42%); /* Main primary color */
+  --primary-lighter: hsl(122, 99%, 47%);
+}
+
+/* Semantic Colors */
+:root {
+  --success-color: #27ae60; /* Success */
+  --warning-color: #f39c12; /* Warning */
+  --error-color: #c0392b; /* Error */
+}
+
+/* UI Elements */
+:root {
+  --bg-light: #f9f9f9;
+  --bg-dark: rgb(30, 30, 30);
+  --text-dark: rgb(30, 30, 30); /* Text color */
+  --text-light: #fafafa; /* Text color */
+}
+
+/* Link Colors */
+:root {
+  --link-color: var(--primary-color); /* Default link color */
+  --link-hover-color: #2980b9; /* Link hover color */
+}
+
+/* Global colour utilities */
+.bg-dark {
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
