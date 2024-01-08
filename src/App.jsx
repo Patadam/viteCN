@@ -1,18 +1,19 @@
-import { useState } from 'react'
-import './App.css'
-import GeneralRules from './general_rules'
-import { Routes, Route } from "react-router-dom"
-import AnimatedCursor from "./component/cursor"
-import Header from './Header'
-import Ssp from './ssp'
-import Coc from './coc'
-import About from './About'
-import Agm from './Agm'
-import Rules from './Rules'
-import Constitution from './constitution'
+import { useState } from "react";
+import "./App.css";
+import GeneralRules from "./general_rules";
+import { Routes, Route } from "react-router-dom";
+import AnimatedCursor from "./component/cursor";
+import Header from "./Header";
+import Ssp from "./ssp";
+import Coc from "./coc";
+import About from "./About";
+import Agm from "./Agm";
+import Rules from "./Rules";
+import Constitution from "./constitution";
 
-function App()
-{
+import GeneralMeeting from "./pages/Gm";
+
+function App() {
   return (
     <div>
       <section className="auto-margin App">
@@ -26,11 +27,11 @@ function App()
           <Route path="/rules/coc" element={<Coc />} />
           <Route path="/rules/constitution" element={<Constitution />} />
           <Route path="/agm" element={<Agm />} />
+          <Route path="/gm" element={<GeneralMeeting />} />
         </Routes>
       </section>
-
     </div>
-  )
+  );
 }
 
 export default App;

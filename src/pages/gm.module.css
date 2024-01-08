@@ -1,0 +1,20 @@
+.schedulewrapper {
+  background: #eee;
+  padding: 1rem;
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
+  p {
+    margin: 0;
+    font-size: 1.1rem;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    place-items: center start;
+    span {
+      font-size: 12px;
+    }
+  }
+  &:hover {
+    box-shadow: 0px 0px 10px 1px rgb(1, 214, 9);
+    scale: 1.01;
+  }
+}

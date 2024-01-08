@@ -4,20 +4,20 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 import SocialDropdown from "./SocialDropdown";
 
-function Navbar()
-{
+function Navbar() {
   const navRef = useRef();
 
-  const showNavbar = () =>
-  {
+  const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
 
   return (
     <header>
-      <div className='edges2'>
+      <div className="edges2">
         <h3>
-          <a href="/"><img src={codeNetworkLogo} alt="Logo of Code Network" height={60} /></a>
+          <a href="/">
+            <img src={codeNetworkLogo} alt="Logo of Code Network" height={60} />
+          </a>
         </h3>
         <nav ref={navRef}>
           <a href="/about">About us</a>
@@ -27,6 +27,7 @@ function Navbar()
             </div>
           </div>
           <a href="/rules">Rules</a>
+          <a href="/gm">General Meeting</a>
 
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />
@@ -35,9 +36,7 @@ function Navbar()
         <button className="nav-btn" onClick={showNavbar}>
           <FaBars />
         </button>
-
       </div>
-
     </header>
   );
 }
